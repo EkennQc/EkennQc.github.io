@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+	color: white;
+}
+
+nav{
+	height: 50px;
+	width: 100%;
+	background-color: black;
+}
+
+ul li{
+	list-style: none;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+a:hover{
+	background-color: lightgrey;
+}
+
+ul li a{
+	text-decoration: none;
+	border-radius: 0;
+}
+
+h1{
+	color: black;
+	text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white;
+	text-align: center;
+}
+
+body{
+	background-color: #111111;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+#banniere{
+	padding: 220px;
+	background-image: url('images/BannerCAC2023.png');
+	background-size: cover;
+	background-position: center;
+
+}
+
+p{
+	width: 85%;
+	text-align: center;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: #800000;
+
+	padding-top: 30px;
+	padding-bottom: 60px;
+	font-size: 20px;
+}
+#image_venue{
+	width: 60%;
+}
+#image_home{
+	width: 80%;
+}
+
+.mainoptions{
+	font-size: 22px;
+	padding-left: 73px;
+	padding-right: 73px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	margin-left: 10px;
+
+	background-color: #800000;
+	color: white;
+}
+
+.mainoptions:hover{
+	font-size: 22px;
+	padding-left: 73px;
+	padding-right: 73px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	margin-left: 10px;
+
+	background-color: #b30000;
+	color: white;
+}
+
+
+#titrepage{
+	color: white;
+	
+	text-align: center;
+	font-size: 90px;
+}
+
+#cac2023{
+	margin-left: 34.5%;
+}
+
+#takealook{
+	
+}
+
+.Section1{
+	background-color: #800000;
+	width: 85%;
+	padding-bottom: 450px;
+	margin: auto;
+	position: relative;
+}
+
+.PT-1{
+	position: absolute;
+	left: 12%;
+}
+
+.B-PT-1{
+	position: absolute;
+	left: 70%;
+	top: 40%;
+
+	padding: 10px 20px 10px 20px;
+}
+
+.T-PT-1{
+	position: absolute;
+	left: 60%;
+	top: 30%;
+
+	font-size: 30px;
+}
+
+.Section2{
+	background-color: #800000;
+	width: 85%;
+	margin: auto;
+	padding-bottom: 450px;
+	position: relative;
+}
+
+.PT-2{
+	position: absolute;
+	right: 12%;
+}
+
+.B-PT-2{
+	position: absolute;
+	right: 70%;
+	top: 40%;
+	padding: 10px 20px 10px 20px;
+}
+
+.T-PT-2{
+	position: absolute;
+	right: 60%;
+	top: 30%;
+
+
+	font-size: 30px;
+}
+
+.T-PT-3{
+	position: absolute;
+	left: 65%;
+	top: 30%;
+
+
+	font-size: 30px;
+}
+
+.T-PT-5{
+	position: absolute;
+	left: 69%;
+	top: 30%;
+
+
+	font-size: 30px;
+}
+
+.T-PT-6{
+	position: absolute;
+	right: 55%;
+	top: 30%;
+
+
+	font-size: 30px;
+}
