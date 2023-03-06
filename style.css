@@ -10,57 +10,146 @@
 	Color: white;
 }
 
-body{
-	background: purple;
+@media(min-width: 1261px)
+{
+	.name{
+		position: absolute;
+		left: 160px;
+		font-size: auto;
+	}
+
+	.name span{
+		color: purple;
+		font-size: 30px;
+	}
 }
 
-nav{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 40px 10% 40px 2%;
-	background: black;
-}
+	body{
+		background: purple;
+	}
 
-.name
 
-.name span{
-	color: purple;
-}
+	nav{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 40px 3% 40px 2%;
+		background: black;
+		height: 200px;
+	}
 
-nav ul li{
-	list-style-type: none;
-	display: inline-block;
-	padding: 10px 20px;
-}
+	nav ul li{
+		list-style-type: none;
+		display: inline-block;
+		padding: 10px 20px;
+	}
 
-.mainOptions{
-	transition: .2s;
-}
+	.mainOptions{
+		transition: .2s;
+	}
 
-.mainOptions:hover{
-	color: purple;
-	transition: .2s;
-}
+	.mainOptions:hover{
+		color: purple;
+		transition: .2s;
+	}
 
-.button{
-	background: purple;
-	padding: 12px 20px;
-	border-radius: 20px;
-	color: white;
-	font-weight: bold;
-	transition: .3s;
-}
+	.button{
+		background: purple;
+		margin: 30px;
+		padding: 12px 20px;
+		border-radius: 20px;
+		color: white;
+		font-weight: bold;
+		transition: .3s;
+	}
 
-.button:hover{
-	padding: 16px 22px;
-	font-size: 24px;
-}
+	.button:hover{
+		padding: 18px 24px;
+		margin-left: 26px;
+		margin-right: 26px;
+	}
 
-.logo{
-	width: 6%;
+	.logo{
+	position: absolute;
+	left: 30px;
+	width: 100px;
 	border-radius: 60px;
+	}
+
+
+@media(max-width: 1260px)
+{
+	
+
+	.name{
+		position: absolute;
+		right: 4%;
+		font-size: auto;
+	}
+
+	.name span{
+		color: purple;
+		font-size: 30px;
+	}
+
+
+	.logo{
+	width: 100px;
+	border-radius: 60px;
+	}
+
+	nav ul {
+		display: grid;
+		position: absolute;
+		background: black;
+		width: 100%;
+		top: 200px;
+		left: 0;
+		z-index: -1;
+		/*transform: translate(-100%);*/
+		transition: .5s;
+	}
+
+	.button{
+	font-weight: 200;
+	background: none;
+	margin: 0;
+	padding: 0;
+	transition: .2s;
+	}
+
+	.button:hover{
+		margin: 0;
+		color: purple;
+		transition: .2s;
+	}
+
+	.mainOptions:hover{
+		padding: 18px;
+		transition: .2s;
+	}
+
+	nav .navbar-toggler{
+		display: none;
+		height: min-content;
+		margin: 18px -10px 0 0;
+		cursor: pointer;
+	}
+
+	nav .navbar-toggler .bar{
+		width: 40px;
+		height: 5px;
+		margin-bottom: 10px;
+		color: white;
+		border-radius: 10%;
+		transition: .4s;
+
+	}
 }
 
-
-
+@media(max-width: 600px)
+{
+	body{
+		background: yellow;
+	}
+}
