@@ -147,9 +147,25 @@
 	}
 }
 
-@media(max-width: 600px)
+@media(max-width: 560px)
 {
-	body{
-		background: yellow;
+
+	.logo{
+		width: 0;
 	}
+
+	.name{
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: auto;
+	}
+
+	.name span{
+		color: purple;
+		font-size: 30px;
+	}
+
+
 }
+
