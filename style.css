@@ -23,6 +23,10 @@
 		font-size: 30px;
 	}
 }
+	
+	#toggle{
+		display: none;
+	}
 
 	body{
 		background: purple;
@@ -83,7 +87,7 @@
 
 	.name{
 		position: absolute;
-		right: 4%;
+		right: 110px;
 		font-size: auto;
 	}
 
@@ -106,7 +110,7 @@
 		top: 200px;
 		left: 0;
 		z-index: -1;
-		/*transform: translate(-100%);*/
+		transform: translate(-100%);
 		transition: .5s;
 	}
 
@@ -130,9 +134,11 @@
 	}
 
 	nav .navbar-toggler{
-		display: none;
+		position: absolute;
+		right: 25px;
+		display: grid;
 		height: min-content;
-		margin: 18px -10px 0 0;
+		margin: 18px 0 0;
 		cursor: pointer;
 	}
 
@@ -140,14 +146,37 @@
 		width: 40px;
 		height: 5px;
 		margin-bottom: 10px;
-		color: white;
+		background: #ffffff;
 		border-radius: 10%;
 		transition: .4s;
 
 	}
+
+	#toggle:checked ~ nav ul
+	{
+		transform: translate(0%);
+		transition: .5s;
+	}
+
+	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(2)
+	{
+		display: none;
+	}
+
+	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(1)
+	{
+		position: absolute;
+		transform: rotate(45deg);
+	}
+
+	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(3)
+	{
+		transform: rotate(-45deg);
+	}
 }
 
-@media(max-width: 560px)
+
+@media(max-width: 640px)
 {
 
 	.logo{
@@ -155,10 +184,10 @@
 	}
 
 	.name{
-		position: relative;
-		margin-left: auto;
-		margin-right: auto;
-		font-size: auto;
+		position: absolute;
+		top: 40px;
+		left: 20px;
+		font-size: 10px;
 	}
 
 	.name span{
@@ -166,6 +195,44 @@
 		font-size: 30px;
 	}
 
+	nav{
+		height: 130px;
+	}
+
+	nav ul {
+		display: grid;
+		position: absolute;
+		background: black;
+		width: 100%;
+		top: 125px;
+		left: 0;
+		z-index: -1;
+		transform: translate(-100%);
+		transition: .5s;
+	}
+
+	#toggle:checked ~ nav ul
+	{
+		transform: translate(0%);
+		transition: .5s;
+	}
+
+	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(2)
+	{
+		display: none;
+	}
+
+	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(1)
+	{
+		position: absolute;
+		transform: rotate(45deg);
+	}
+
+	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(3)
+	{
+		transform: rotate(-45deg);
+	}
+	
 
 }
 
