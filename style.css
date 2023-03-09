@@ -39,7 +39,7 @@
 		justify-content: space-between;
 		padding: 40px 3% 40px 2%;
 		background: black;
-		height: 200px;
+		height: 130px;
 	}
 
 	nav ul li{
@@ -87,7 +87,7 @@
 
 	.name{
 		position: absolute;
-		right: 110px;
+		left: 140px;
 		font-size: auto;
 	}
 
@@ -108,7 +108,7 @@
 		background: black;
 		opacity: 1;
 		width: 100%;
-		top: 200px;
+		top: 130px;
 		left: 0;
 		z-index: -1;
 		transform: translate(0, -100%);
@@ -182,25 +182,26 @@
 
 	.logo{
 		position: absolute;
-		top: 10px;
-		left: 45%;
-		width: 40px;
+		top: 20px;
+		left: 10px;
+		width: 60px;
 	}
 
 	.name{
 		position: absolute;
-		top: 40px;
-		left: 20px;
-		font-size: 10px;
+		top: 25px;
+		left: 80px;
+		width: 70px;
+		font-size: 8px;
 	}
 
 	.name span{
 		color: purple;
-		font-size: 30px;
+		font-size: 24px;
 	}
 
 	nav{
-		height: 130px;
+		height: 100px;
 	}
 
 	nav ul {
@@ -208,7 +209,7 @@
 		position: absolute;
 		background: black;
 		width: 100%;
-		top: 125px;
+		top: 100px;
 		left: 0;
 		z-index: -1;
 		transform: translate(0, -100%);
