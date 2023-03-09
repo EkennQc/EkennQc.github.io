@@ -166,7 +166,6 @@
 
 	#toggle:checked ~ nav .navbar-toggler .bar1
 	{
-		position: absolute;
 		transform: rotate(45deg);
 	}
 
@@ -248,7 +247,6 @@
 
 	#toggle:checked ~ nav .navbar-toggler .bar1
 	{
-		position: absolute;
 		transform: rotate(45deg);
 	}
 
