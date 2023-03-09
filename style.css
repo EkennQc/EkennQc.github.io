@@ -158,7 +158,7 @@
 		transform: translate(0, 0);
 		transition: .5s;
 	}
-
+	/*
 	#toggle:checked ~ nav .navbar-toggler .bar2
 	{
 		display: none;
@@ -173,6 +173,7 @@
 	{
 		transform: rotate(-45deg);
 	}
+	*/
 }
 
 
@@ -224,6 +225,7 @@
 	}
 
 	nav .navbar-toggler span{
+		position: relative;
 		display: grid;
 		width: 40px;
 		height: 5px;
@@ -239,22 +241,25 @@
 		transform: translate(0%);
 		transition: .5s;
 	}
-
+	/*
 	#toggle:checked ~ nav .navbar-toggler .bar2
 	{
+		position: relative;
 		display: none;
 	}
 
 	#toggle:checked ~ nav .navbar-toggler .bar1
 	{
+		position: relative;
 		transform: rotate(45deg);
 	}
 
 	#toggle:checked ~ nav .navbar-toggler .bar3
 	{
+		position: relative;
 		transform: rotate(-45deg);
 	}
-	
+	*/
 
 }
 
