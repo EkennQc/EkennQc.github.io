@@ -106,6 +106,7 @@
 		display: grid;
 		position: absolute;
 		background: black;
+		opacity: 1;
 		width: 100%;
 		top: 200px;
 		left: 0;
@@ -134,15 +135,15 @@
 	}
 
 	nav .navbar-toggler{
+		display: grid;
 		position: absolute;
 		right: 25px;
-		display: grid;
 		height: min-content;
-		margin: 18px 0 0;
 		cursor: pointer;
 	}
 
-	nav .navbar-toggler .bar{
+	nav .navbar-toggler span{
+		display: grid;
 		width: 40px;
 		height: 5px;
 		margin-bottom: 10px;
@@ -158,18 +159,18 @@
 		transition: .5s;
 	}
 
-	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(2)
+	#toggle:checked ~ nav .navbar-toggler .bar2
 	{
 		display: none;
 	}
 
-	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(1)
+	#toggle:checked ~ nav .navbar-toggler .bar1
 	{
 		position: absolute;
 		transform: rotate(45deg);
 	}
 
-	#toggle:checked ~ nav .navbar-toggler .bar:nth-child(3)
+	#toggle:checked ~ nav .navbar-toggler .bar3
 	{
 		transform: rotate(-45deg);
 	}
@@ -180,7 +181,10 @@
 {
 
 	.logo{
-		width: 0;
+		position: absolute;
+		top: 10px;
+		left: 45%;
+		width: 40px;
 	}
 
 	.name{
@@ -211,9 +215,28 @@
 		transition: .5s;
 	}
 
+	nav .navbar-toggler{
+		display: grid;
+		position: absolute;
+		right: 25px;
+		height: min-content;
+		cursor: pointer;
+	}
+
+	nav .navbar-toggler span{
+		display: grid;
+		width: 40px;
+		height: 5px;
+		margin-bottom: 10px;
+		background: white;
+		border-radius: 10%;
+		transition: .4s;
+
+	}
+
 	#toggle:checked ~ nav ul
 	{
-		transform: translate(0, 0);
+		transform: translate(0%);
 		transition: .5s;
 	}
 
