@@ -1,265 +1,196 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
-*{
-	padding: 0;
+* {
 	margin: 0;
-	box-sizing: border-box;
+	padding: 0;
 	font-family: "Montserrat", sans-serif;
-	font-size: 20px;
+	color: white;
+}
+
+nav{
+	height: 50px;
+	width: 100%;
+	background-color: black;
+}
+
+
+ul li{
+	list-style: none;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a{
 	text-decoration: none;
-	Color: white;
+	color: black;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+
 }
 
-@media(min-width: 1261px)
-{
-	.name{
-		position: absolute;
-		left: 160px;
-		font-size: auto;
-	}
-
-	.name span{
-		color: purple;
-		font-size: 30px;
-	}
+a:hover{
+	background-color: lightgrey;
 }
+
+ul li a{
+	text-decoration: none;
+	border-radius: 0;
+}
+
+h1{
+	color: black;
+	text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white;
+	text-align: center;
+}
+
+body{
+	background-color: #111111;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+#banniere{
+	padding: 220px;
+	background-image: url('images/BannerCAC2023.png');
+	background-size: cover;
+	background-position: center;
+
+}
+
+p{
+	width: 85%;
+	text-align: center;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: #800000;
+
+	padding-top: 30px;
+	padding-bottom: 60px;
+	font-size: 20px;
+}
+#image_venue{
+	width: 60%;
+}
+#image_home{
+	width: 80%;
+}
+
+div div img{
+	width: 90%;
+}
+
+.mainoptions{
+	font-size: 22px;
+	padding-left: 73px;
+	padding-right: 73px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	margin-left: 10px;
+
+	background-color: #800000;
+	color: white;
+}
+
+.mainoptions:hover{
+	font-size: 22px;
+	padding-left: 73px;
+	padding-right: 73px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	margin-left: 10px;
+
+	background-color: #b30000;
+	color: white;
+}
+
+
+#titrepage{
+	color: white;
 	
-	#toggle{
-		display: none;
-	}
+	text-align: center;
+	font-size: 90px;
+}
 
-	body{
-		background: purple;
-	}
+#cac2023{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
 
-
-	nav{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 40px 3% 40px 2%;
-		background: black;
-		height: 130px;
-	}
-
-	nav ul li{
-		list-style-type: none;
-		display: inline-block;
-		padding: 10px 20px;
-	}
-
-	.mainOptions{
-		transition: .2s;
-	}
-
-	.mainOptions:hover{
-		color: purple;
-		transition: .2s;
-	}
-
-	.button{
-		background: purple;
-		margin: 30px;
-		padding: 12px 20px;
-		border-radius: 20px;
-		color: white;
-		font-weight: bold;
-		transition: .3s;
-	}
-
-	.button:hover{
-		padding: 18px 24px;
-		margin-left: 26px;
-		margin-right: 26px;
-	}
-
-	.logo{
-	position: absolute;
-	left: 30px;
-	width: 100px;
-	border-radius: 60px;
-	}
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+	background-color: #800000;
 
 
-@media(max-width: 1260px)
-{
-	
+	padding-bottom: 40px;
+	margin: 0 7.5% 0 7.5%;
+}
+.container{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
 
-	.name{
-		position: absolute;
-		left: 140px;
-		font-size: auto;
-	}
+.container .card{
+	position: relative;
+	min-width: 450px;
+	width: 45%;
+	margin: 5px 15px 5px 15px;
+	padding: 15px;
+	display: flex;
+	border-radius: 5px;
+	background-color: #222222;
+}
 
-	.name span{
-		color: purple;
-		font-size: 30px;
-	}
+.container .card .content h4{
+	margin-bottom: 60px;
+}
 
+.container .card .img_place{
+	max-width:300px;
+	flex: 0 0 300px;
+}
 
-	.logo{
-	width: 100px;
-	border-radius: 60px;
-	}
-
-	nav ul {
-		display: grid;
-		position: absolute;
-		background: black;
-		opacity: 1;
-		width: 100%;
-		top: 130px;
-		left: 0;
-		z-index: -1;
-		transform: translate(0, -100%);
-		transition: .5s;
-	}
-
-	.button{
-	font-weight: 200;
-	background: none;
-	margin: 0;
-	padding: 0;
-	transition: .2s;
-	}
-
-	.button:hover{
-		margin: 0;
-		color: purple;
-		transition: .2s;
-	}
-
-	.mainOptions:hover{
-		padding: 18px;
-		transition: .2s;
-	}
-
-	nav .navbar-toggler{
-		display: grid;
-		position: absolute;
-		right: 25px;
-		height: min-content;
-		cursor: pointer;
-	}
-
-	nav .navbar-toggler span{
-		display: grid;
-		width: 40px;
-		height: 5px;
-		margin-bottom: 10px;
-		background: #ffffff;
-		border-radius: 10%;
-		transition: .4s;
-
-	}
-
-	#toggle:checked ~ nav ul
-	{
-		transform: translate(0, 0);
-		transition: .5s;
-	}
-	/*
-	#toggle:checked ~ nav .navbar-toggler .bar2
-	{
-		display: none;
-	}
-
-	#toggle:checked ~ nav .navbar-toggler .bar1
-	{
-		transform: rotate(45deg);
-	}
-
-	#toggle:checked ~ nav .navbar-toggler .bar3
-	{
-		transform: rotate(-45deg);
-	}
-	*/
+.container .card .img_place img{
+	max-width: 100%
+	margin-left: 20px;
+	border-radius: 10px;
 }
 
 
-@media(max-width: 640px)
+@media (max-width: 1450px)
 {
-
-	.logo{
-		position: absolute;
-		top: 20px;
-		left: 10px;
-		width: 60px;
+	.container{
+		flex-direction: column;
 	}
-
-	.name{
-		position: absolute;
-		top: 25px;
-		left: 80px;
-		width: 70px;
-		font-size: 8px;
-	}
-
-	.name span{
-		color: purple;
-		font-size: 24px;
-	}
-
-	nav{
-		height: 100px;
-	}
-
-	nav ul {
-		display: grid;
-		position: absolute;
-		background: black;
-		width: 100%;
-		top: 100px;
-		left: 0;
-		z-index: -1;
-		transform: translate(0, -100%);
-		transition: .5s;
-	}
-
-	nav .navbar-toggler{
-		display: grid;
-		position: absolute;
-		right: 25px;
-		height: min-content;
-		cursor: pointer;
-	}
-
-	nav .navbar-toggler span{
-		position: relative;
-		display: grid;
-		width: 40px;
-		height: 5px;
-		margin-bottom: 10px;
-		background: white;
-		border-radius: 10%;
-		transition: .4s;
-
-	}
-
-	#toggle:checked ~ nav ul
-	{
-		transform: translate(0%);
-		transition: .5s;
-	}
-	/*
-	#toggle:checked ~ nav .navbar-toggler .bar2
-	{
-		position: relative;
-		display: none;
-	}
-
-	#toggle:checked ~ nav .navbar-toggler .bar1
-	{
-		position: relative;
-		transform: rotate(45deg);
-	}
-
-	#toggle:checked ~ nav .navbar-toggler .bar3
-	{
-		position: relative;
-		transform: rotate(-45deg);
-	}
-	*/
-
 }
 
+.schedule{
+	width: 50%;
+}
+
+.categories{
+	font-size: 25px;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
